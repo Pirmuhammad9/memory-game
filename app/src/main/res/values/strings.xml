@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Memory Game</string>
+    <string name="category">Category</string>
+    <string name="sound_on">SOUND ON</string>
+    <string name="sound_off">SOUND OFF</string>
+    <string name="review">REVIEW</string>
+    <string name="telegram">TELEGRAM</string>
+    <string name="info">INFO</string>
+    <string name="do_you_want_to_exit">Do you want to exit?</string>
+    <string name="menu">MENU</string>
+    <string name="new_game">NEW GAME</string>
+    <string name="cencel">CANCEL</string>
+    <string name="game_over">Game Over</string>
+    <string name="exit">Exit</string>
+    <string name="cancel">CANCEL</string>
+    <string name="refresh">Refresh</string>
+    <string name="you_win">You win</string>
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/base"
+    android:background="@drawable/bg"
+    tools:context=".presenter.screen.MultiPlayerScreen">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="16dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/top_forest"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        android:src="@drawable/topbase_rock"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/back"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_margin="16dp"
+        android:elevation="16dp"
+        android:src="@drawable/option_0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/playerFirst"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_margin="32dp"
+        android:elevation="16dp"
+        android:src="@drawable/twoplay_1p"
+        app:layout_constraintStart_toStartOf="@id/back"
+        app:layout_constraintTop_toTopOf="@id/back" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/playerSecond"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_margin="32dp"
+        android:elevation="16dp"
+        android:src="@drawable/twoplay_2p"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/back" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/playerFirst"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <nl.dionsegijn.konfetti.xml.KonfettiView
+        android:id="@+id/konfet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/playerTurn"
+        android:src="@drawable/turnchange_0"
+        android:visibility="gone"
+        android:layout_margin="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/firstPlayerPoint"
+        android:text="0"
+        android:elevation="16dp"
+        android:textStyle="bold"
+        android:textColor="#F7376277"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="@id/playerFirst"
+        app:layout_constraintBottom_toBottomOf="@id/playerFirst"
+        app:layout_constraintStart_toStartOf="@id/playerFirst"
+        app:layout_constraintEnd_toEndOf="@id/playerFirst"
+        app:layout_constraintHorizontal_bias="0.7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+     <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/secondPlayerPoint"
+        android:text="0"
+        android:elevation="16dp"
+        android:textStyle="bold"
+        android:textColor="#F7376277"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="@id/playerSecond"
+        app:layout_constraintBottom_toBottomOf="@id/playerSecond"
+        app:layout_constraintStart_toStartOf="@id/playerSecond"
+        app:layout_constraintEnd_toEndOf="@id/playerSecond"
+        app:layout_constraintHorizontal_bias="0.7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
