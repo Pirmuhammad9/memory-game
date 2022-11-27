@@ -1,7 +1,6 @@
-package uz.gita.memorygamexp.presenter.screen.dialog
+package uz.gita.memorygamexp.presentation.screen.dialog
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.viewModels
@@ -10,8 +9,8 @@ import by.kirich1409.viewbindingdelegate.viewBinding
 import dagger.hilt.android.AndroidEntryPoint
 import uz.gita.memorygamexp.R
 import uz.gita.memorygamexp.databinding.GameDialogBinding
-import uz.gita.memorygamexp.presenter.viewmodel.GameDialogViewModel
-import uz.gita.memorygamexp.presenter.viewmodel.impl.GameDialogViewModelImpl
+import uz.gita.memorygamexp.presentation.viewmodel.GameDialogViewModel
+import uz.gita.memorygamexp.presentation.viewmodel.impl.GameDialogViewModelImpl
 
 @AndroidEntryPoint
 class GameDialog : DialogFragment(R.layout.game_dialog) {

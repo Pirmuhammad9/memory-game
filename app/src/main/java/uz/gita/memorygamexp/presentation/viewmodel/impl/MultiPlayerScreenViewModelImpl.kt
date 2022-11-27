@@ -1,6 +1,5 @@
-package uz.gita.memorygamexp.presenter.viewmodel.impl
+package uz.gita.memorygamexp.presentation.viewmodel.impl
 
-import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -9,7 +8,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import uz.gita.memorygamexp.data.model.Player
 import uz.gita.memorygamexp.domain.usecase.MultiPlayerScreenUsecase
-import uz.gita.memorygamexp.presenter.viewmodel.MultiPlayerScreenViewModel
+import uz.gita.memorygamexp.presentation.viewmodel.MultiPlayerScreenViewModel
 import javax.inject.Inject
 
 @HiltViewModel

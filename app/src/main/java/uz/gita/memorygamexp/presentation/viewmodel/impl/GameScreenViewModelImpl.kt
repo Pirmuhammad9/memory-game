@@ -1,6 +1,5 @@
-package uz.gita.memorygamexp.presenter.viewmodel.impl
+package uz.gita.memorygamexp.presentation.viewmodel.impl
 
-import android.app.job.JobInfo
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -8,7 +7,7 @@ import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.*
 import uz.gita.memorygamexp.domain.usecase.GameScreenUsecase
-import uz.gita.memorygamexp.presenter.viewmodel.GameScreenViewModel
+import uz.gita.memorygamexp.presentation.viewmodel.GameScreenViewModel
 import javax.inject.Inject
 
 @HiltViewModel

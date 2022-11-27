@@ -1,4 +1,4 @@
-package uz.gita.memorygamexp.presenter.screen.dialog
+package uz.gita.memorygamexp.presentation.screen.dialog
 
 import android.os.Bundle
 import android.view.View

@@ -1,4 +1,4 @@
-package uz.gita.memorygamexp.presenter.screen
+package uz.gita.memorygamexp.presentation.screen
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,8 +9,8 @@ import by.kirich1409.viewbindingdelegate.viewBinding
 import dagger.hilt.android.AndroidEntryPoint
 import uz.gita.memorygamexp.R
 import uz.gita.memorygamexp.databinding.ScreenSplashBinding
-import uz.gita.memorygamexp.presenter.viewmodel.SplashScreenViewModel
-import uz.gita.memorygamexp.presenter.viewmodel.impl.SplashScreenViewModelImpl
+import uz.gita.memorygamexp.presentation.viewmodel.SplashScreenViewModel
+import uz.gita.memorygamexp.presentation.viewmodel.impl.SplashScreenViewModelImpl
 
 @AndroidEntryPoint
 class SplashScreen : Fragment(R.layout.screen_splash) {

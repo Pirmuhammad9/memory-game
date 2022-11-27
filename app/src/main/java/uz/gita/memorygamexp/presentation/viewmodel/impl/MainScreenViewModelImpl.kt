@@ -1,10 +1,10 @@
-package uz.gita.memorygamexp.presenter.viewmodel.impl
+package uz.gita.memorygamexp.presentation.viewmodel.impl
 
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
-import uz.gita.memorygamexp.presenter.viewmodel.MainScreenViewModel
+import uz.gita.memorygamexp.presentation.viewmodel.MainScreenViewModel
 import javax.inject.Inject
 
 @HiltViewModel

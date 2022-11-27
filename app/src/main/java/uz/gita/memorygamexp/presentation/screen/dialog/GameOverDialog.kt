@@ -1,8 +1,7 @@
-package uz.gita.memorygamexp.presenter.screen.dialog
+package uz.gita.memorygamexp.presentation.screen.dialog
 
 import android.os.Bundle
 import android.view.View
-import androidx.core.view.ContentInfoCompat
 import androidx.fragment.app.DialogFragment
 import by.kirich1409.viewbindingdelegate.viewBinding
 import uz.gita.memorygamexp.R

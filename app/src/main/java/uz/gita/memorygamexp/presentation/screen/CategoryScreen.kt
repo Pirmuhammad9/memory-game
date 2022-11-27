@@ -1,8 +1,7 @@
-package uz.gita.memorygamexp.presenter.screen
+package uz.gita.memorygamexp.presentation.screen
 
 import android.os.Bundle
 import android.view.View
-import androidx.activity.addCallback
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
@@ -12,8 +11,8 @@ import dagger.hilt.android.AndroidEntryPoint
 import uz.gita.memorygamexp.R
 import uz.gita.memorygamexp.data.model.Category
 import uz.gita.memorygamexp.databinding.ScreenCategoryBinding
-import uz.gita.memorygamexp.presenter.viewmodel.CategoryScreenViewModel
-import uz.gita.memorygamexp.presenter.viewmodel.impl.CategoryScreenViewModelImpl
+import uz.gita.memorygamexp.presentation.viewmodel.CategoryScreenViewModel
+import uz.gita.memorygamexp.presentation.viewmodel.impl.CategoryScreenViewModelImpl
 
 @AndroidEntryPoint
 class CategoryScreen : Fragment(R.layout.screen_category) {

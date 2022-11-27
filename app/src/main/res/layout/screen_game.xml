@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg"
     android:id="@+id/main"
-    tools:context=".presenter.screen.GameScreen">
+    tools:context=".presentation.screen.GameScreen">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/header"

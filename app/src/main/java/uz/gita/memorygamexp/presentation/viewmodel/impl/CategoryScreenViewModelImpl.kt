@@ -1,4 +1,4 @@
-package uz.gita.memorygamexp.presenter.viewmodel.impl
+package uz.gita.memorygamexp.presentation.viewmodel.impl
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -8,7 +8,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import uz.gita.memorygamexp.data.model.Category
 import uz.gita.memorygamexp.domain.usecase.CategoryScreenUsecase
-import uz.gita.memorygamexp.presenter.viewmodel.CategoryScreenViewModel
+import uz.gita.memorygamexp.presentation.viewmodel.CategoryScreenViewModel
 import javax.inject.Inject
 
 @HiltViewModel

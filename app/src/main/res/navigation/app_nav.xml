@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/splashScreen"
-        android:name="uz.gita.memorygamexp.presenter.screen.SplashScreen"
+        android:name="uz.gita.memorygamexp.presentation.screen.SplashScreen"
         android:label="screen_splash"
         tools:layout="@layout/screen_splash" >
         <action
@@ -18,12 +18,12 @@
     </fragment>
     <fragment
         android:id="@+id/gameScreen"
-        android:name="uz.gita.memorygamexp.presenter.screen.GameScreen"
+        android:name="uz.gita.memorygamexp.presentation.screen.GameScreen"
         android:label="screen_game"
         tools:layout="@layout/screen_game" />
     <fragment
         android:id="@+id/mainScreen"
-        android:name="uz.gita.memorygamexp.presenter.screen.MainScreen"
+        android:name="uz.gita.memorygamexp.presentation.screen.MainScreen"
         android:label="screen_menu"
         tools:layout="@layout/screen_menu" >
         <action
@@ -38,12 +38,12 @@
     </fragment>
     <fragment
         android:id="@+id/categoryScreen"
-        android:name="uz.gita.memorygamexp.presenter.screen.CategoryScreen"
+        android:name="uz.gita.memorygamexp.presentation.screen.CategoryScreen"
         android:label="screen_category"
         tools:layout="@layout/screen_category" />
     <fragment
         android:id="@+id/multiPlayerScreen"
-        android:name="uz.gita.memorygamexp.presenter.screen.MultiPlayerScreen"
+        android:name="uz.gita.memorygamexp.presentation.screen.MultiPlayerScreen"
         android:label="screen_multiplayer"
         tools:layout="@layout/screen_multiplayer" />
 </navigation>

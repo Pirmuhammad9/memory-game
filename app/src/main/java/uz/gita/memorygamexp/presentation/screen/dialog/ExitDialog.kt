@@ -1,4 +1,4 @@
-package uz.gita.memorygamexp.presenter.screen.dialog
+package uz.gita.memorygamexp.presentation.screen.dialog
 
 import android.os.Bundle
 import android.view.View
@@ -24,14 +24,12 @@ class ExitDialog : DialogFragment(R.layout.exit_dialog) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
         binding.no.setOnClickListener {
-            this.dismiss()
             setOnCancelClick?.invoke()
+            this.dismiss()
         }
-
         binding.yes.setOnClickListener {
             setOnYesClick?.invoke()
         }
-
     }
 
     fun setOnYesClickLister(bl: () -> Unit) {
@@ -42,9 +40,5 @@ class ExitDialog : DialogFragment(R.layout.exit_dialog) {
         setOnCancelClick = bl
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        setOnCancelClick = null
-    }
 
 }

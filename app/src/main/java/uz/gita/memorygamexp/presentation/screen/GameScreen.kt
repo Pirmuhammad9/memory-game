@@ -1,4 +1,4 @@
-package uz.gita.memorygamexp.presenter.screen
+package uz.gita.memorygamexp.presentation.screen
 
 import android.os.Bundle
 import android.view.View
@@ -21,12 +21,12 @@ import nl.dionsegijn.konfetti.core.Position
 import nl.dionsegijn.konfetti.core.emitter.Emitter
 import uz.gita.memorygamexp.R
 import uz.gita.memorygamexp.databinding.ScreenGameBinding
-import uz.gita.memorygamexp.presenter.screen.dialog.ExitDialog
-import uz.gita.memorygamexp.presenter.screen.dialog.GameDialog
-import uz.gita.memorygamexp.presenter.screen.dialog.GameOverDialog
-import uz.gita.memorygamexp.presenter.screen.dialog.GameWinDialog
-import uz.gita.memorygamexp.presenter.viewmodel.GameScreenViewModel
-import uz.gita.memorygamexp.presenter.viewmodel.impl.GameScreenViewModelImpl
+import uz.gita.memorygamexp.presentation.screen.dialog.ExitDialog
+import uz.gita.memorygamexp.presentation.screen.dialog.GameDialog
+import uz.gita.memorygamexp.presentation.screen.dialog.GameOverDialog
+import uz.gita.memorygamexp.presentation.screen.dialog.GameWinDialog
+import uz.gita.memorygamexp.presentation.viewmodel.GameScreenViewModel
+import uz.gita.memorygamexp.presentation.viewmodel.impl.GameScreenViewModelImpl
 import uz.gita.memorygamexp.utils.Music
 import java.util.concurrent.TimeUnit
 
@@ -68,14 +68,17 @@ class GameScreen : Fragment(R.layout.screen_game) {
                 dialogExit.dismiss()
                 findNavController().popBackStack()
             }
+            setOnCancelClickLister {
+                viewModel.calculate = false
+            }
         }
     }
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) = with(binding) {
         requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner) {
-            dialogExit.show(childFragmentManager, "")
             viewModel.calculate = true
+            dialogExit.show(childFragmentManager, "")
         }
         progress.max = 12
         back.setOnClickListener {

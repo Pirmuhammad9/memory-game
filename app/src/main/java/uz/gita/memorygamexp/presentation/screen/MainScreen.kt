@@ -1,4 +1,4 @@
-package uz.gita.memorygamexp.presenter.screen
+package uz.gita.memorygamexp.presentation.screen
 
 import android.content.Intent
 import android.net.Uri
@@ -14,10 +14,10 @@ import by.kirich1409.viewbindingdelegate.viewBinding
 import dagger.hilt.android.AndroidEntryPoint
 import uz.gita.memorygamexp.R
 import uz.gita.memorygamexp.databinding.ScreenMenuBinding
-import uz.gita.memorygamexp.presenter.screen.dialog.BaseDialog
-import uz.gita.memorygamexp.presenter.screen.dialog.ExitDialog
-import uz.gita.memorygamexp.presenter.viewmodel.MainScreenViewModel
-import uz.gita.memorygamexp.presenter.viewmodel.impl.MainScreenViewModelImpl
+import uz.gita.memorygamexp.presentation.screen.dialog.BaseDialog
+import uz.gita.memorygamexp.presentation.screen.dialog.ExitDialog
+import uz.gita.memorygamexp.presentation.viewmodel.MainScreenViewModel
+import uz.gita.memorygamexp.presentation.viewmodel.impl.MainScreenViewModelImpl
 import uz.gita.memorygamexp.utils.isNetworkAvailable
 
 @AndroidEntryPoint

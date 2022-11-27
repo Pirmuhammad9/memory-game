@@ -6,7 +6,7 @@
     android:background="#26A9E1"
     android:elevation="16dp"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".presenter.screen.SplashScreen">
+    tools:context=".presentation.screen.SplashScreen">
 
     <ImageView
         android:src="@drawable/base_icon"

@@ -1,4 +1,4 @@
-package uz.gita.memorygamexp.presenter.viewmodel
+package uz.gita.memorygamexp.presentation.viewmodel
 
 import androidx.lifecycle.LiveData
 

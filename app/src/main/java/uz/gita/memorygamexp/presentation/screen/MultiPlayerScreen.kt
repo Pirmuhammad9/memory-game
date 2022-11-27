@@ -1,4 +1,4 @@
-package uz.gita.memorygamexp.presenter.screen
+package uz.gita.memorygamexp.presentation.screen
 
 import android.os.Bundle
 import android.view.View
@@ -23,10 +23,10 @@ import nl.dionsegijn.konfetti.core.emitter.Emitter
 import uz.gita.memorygamexp.R
 import uz.gita.memorygamexp.data.model.Player
 import uz.gita.memorygamexp.databinding.ScreenMultiplayerBinding
-import uz.gita.memorygamexp.presenter.screen.dialog.ExitDialog
-import uz.gita.memorygamexp.presenter.screen.dialog.GameWinDialog
-import uz.gita.memorygamexp.presenter.viewmodel.MultiPlayerScreenViewModel
-import uz.gita.memorygamexp.presenter.viewmodel.impl.MultiPlayerScreenViewModelImpl
+import uz.gita.memorygamexp.presentation.screen.dialog.ExitDialog
+import uz.gita.memorygamexp.presentation.screen.dialog.GameWinDialog
+import uz.gita.memorygamexp.presentation.viewmodel.MultiPlayerScreenViewModel
+import uz.gita.memorygamexp.presentation.viewmodel.impl.MultiPlayerScreenViewModelImpl
 import uz.gita.memorygamexp.utils.Music
 import java.util.concurrent.TimeUnit
 
@@ -259,6 +259,10 @@ class MultiPlayerScreen : Fragment(R.layout.screen_multiplayer) {
         winningDialog = GameWinDialog(winner, "Exit")
         winningDialog.setOnContinueClickListener {
             viewModel.getData()
+            openImagecount = 0
+            currentTurn = Player.FIRST_PLAYER
+            binding.firstPlayerPoint.text = "0"
+            binding.secondPlayerPoint.text = "0"
         }
         winningDialog.setOnRefreshClickListener {
             findNavController().popBackStack()
